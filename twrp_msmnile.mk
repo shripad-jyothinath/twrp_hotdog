@@ -9,14 +9,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
+# Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from msmnile device
 $(call inherit-product, device/qualcomm/msmnile/device.mk)
 
 PRODUCT_DEVICE := msmnile
-PRODUCT_NAME := omni_msmnile
+PRODUCT_NAME := twrp_msmnile
 PRODUCT_BRAND := qti
 PRODUCT_MODEL := msmnile for arm64
 PRODUCT_MANUFACTURER := qualcomm
